@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cryptocurrency Tracker Dashboard</title>
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <nav class="logo">crypto</nav>
+            <!-- <img src="asset/logo-3.jpg" alt="" class="logo"> -->
+            <div class="nav-menu" id="navMenu">
+                <ul>
+                    <li><a href="home.html" class="link active">Home</a></li>
+                    <li><a href="register.html" class="link">Register</a></li>
+                    <li><a href="contact.html" class="link">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="content">
+            <h1>BUY & <br>SELL <span>Crypto</span></h1>
+            <h3>World biggest <br><span>Cryptocurrencies</span></h3>            
+        </div>               
+            <!-- Filter for Top 5 or Top 10 -->
+        <div class="table-container">
+            <label for="top-filter" class="label">Show top 5:</label>
+            <select id="top-filter">
+                <option value="5" class="label">Top 5</option>
+                <option value="10" class="lable">Top 10</option>
+            </select>
+            <!-- Table for cryptocurrency data -->
+            <table id="crypto-table">
+                <thead>
+                    <tr>
+                        <th onclick="sortTable(0)">#</th>
+                        <th onclick="sortTable(1)">Name</th>
+                        <th onclick="sortTable(2)">Symbol</th>
+                        <th onclick="sortTable(3)">Price (USD)</th>
+                        <th onclick="sortTable(4)">Market Cap (USD)</th>
+                        <th onclick="sortTable(5)">24h Change</th>
+                        <th>Watch</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Data will be dynamically inserted here -->
+                </tbody>
+            </table><br>
+            <a href="" id="btn">EXPLORE MORE</a>
+            <h3>Add here Your watch list</h3>
+            <div id="watchlist"></div>
+        </div>    
+    </div>
+    <script src="home.js"></script>   
+ </body>
+ </html>   

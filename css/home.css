@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Syne:wght@400..800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    --body-font: "Syne", sans-serif;
+    /* background-image: url(asset/back-3.jpg); */
+    background-color: var(--body-color);
+}
+:root{
+        /* -----colors----- */
+    /* color mode HSL(hue, saturation, lightness) */
+
+            /* change favorite color 
+            Default: hsl(230, 55%, 55%)
+            Purple: hsl(245, 55%, 55%) - Blue: hsl(210, 55%, 55%)
+            Pink: hsl(340, 55%, 55%)  -Green: hsl(162, 55%, 55%)
+            Orange: hsl(14, 55%, 55%)*/
+    --hue: 230;
+    --first-color: hsl(var(--hue), 55%, 55%);
+    --first-color-light: hsl(var(--hue), 55%, 65%);
+    --first-color-alt: hsl(var(--hue), 50%, 50%);
+    --title-color: hsl(var(--hue), 30%, 95%);
+    --text-color: hsl(var(--hue), 20%, 80%);
+    --text-color-light: hsl(var(--hue), 20%, 70%);
+    --body-color: hsl(var(--hue), 40%, 16%);
+    --container-color: hsl(var(--hue), 40%, 20%);
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: var(--body-font);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 200vh;  
+    background-position: center;
+    background-size: cover;
+    /* padding: 20px; */
+    color: #fff;
+}
+nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0; 
+}
+.logo{
+    color: #ff960b;
+    font-size: 25px;
+    font-weight: bolder;
+}
+nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+nav ul li{
+     margin: 0 15px;  
+}
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+}
+.nav-menu ul li .link{
+    text-decoration: none;
+    font-weight: 500;
+    color: #fff;
+    padding-bottom: 15px;
+    margin: 0 25px;
+}
+.link:hover{
+    border-bottom: 2px solid #fff;
+}
+/* ===========Content===========*/
+.content{
+    text-align: center;
+    margin-top: 10px;
+}
+.content h1{
+    font-size: 35px;
+    margin: 10px 0;
+}
+.content h1 span{
+    color: #ff960b;
+}
+.content h3 span{
+    color: #ff960b;
+}
+.content h3{
+    margin-bottom: 5px;
+    font-size: 20px;
+}
+#btn{
+    float: right;
+    background: #ff960b;
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 30px;
+    margin-right: 45px;
+}
+/* ==========Table style============*/
+.table-container{
+    margin-top: 2px;
+    margin-left: 0;
+    padding: 8px;    
+}
+.table-container label{
+    font-size: 16px;
+    font-weight: bold;
+    color: #ff960b;
+}
+#top-filter{
+    margin: 8px 0;
+    padding: 3px;
+    font-size: 12px;
+    background: #fff;
+    border-radius: 8px;
+}
+#crypto-table { 
+    width: 95%; 
+    /* border-collapse: collapse;  */
+    margin-top: 2px; 
+    margin-left: 2px;
+}
+#crypto-table th, #crypto-table td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+#crypto-table th {
+    background-color: #333;
+    color: #ff960b; 
+    cursor: pointer;
+}
+/* =========Table inner text color===========*/
+.green { 
+    color: green; 
+    font-weight: bold; 
+}
+.red { 
+    color: red; 
+    font-weight: bold; 
+}
+.watchlist-btn { 
+    cursor: pointer; 
+    color: white; 
+    padding: 5px 10px; 
+    border: none; 
+    border-radius: 15px; 
+}
+.watchlist-btn.add { 
+    background-color: #ff960b; 
+}
+.watchlist-btn.remove { 
+    background-color: #f44336; 
+}
+#watchlist { 
+    margin-top: 8px;
+    margin-left: 30px;
+}
+/* Responsive Styles */
+@media (max-width: 1024px) {
+    .container {
+        padding: 10px;
+    }
+
+    nav ul {
+        display: block;
+        text-align: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .content h1 {
+        font-size: 40px;
+    }
+
+    .content h3 {
+        font-size: 18px;
+    }
+    #crypto-table th, #crypto-table td {
+        font-size: 14px;
+        padding: 6px;
+    }
+}
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav .logo {
+        margin-bottom: 10px;
+    }
+
+    nav ul li {
+        margin: 18px 0;
+    }
+
+    .content h1 {
+        font-size: 32px;
+    }
+
+    .content h3 {
+        font-size: 16px;
+    }
+
+    .table-container {
+        padding: 10px;
+    }
+
+    #crypto-table th, #crypto-table td {
+        font-size: 12px;
+        padding: 4px;
+    }
+    #btn{
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
+    nav {
+        padding: 10px 5px;
+    }
+
+    nav .logo {
+        font-size: 20px;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    }
+
+    .content h1 {
+        font-size: 24px;
+    }
+
+    .content h3 {
+        font-size: 14px;
+    }
+    .table-container label, #top-filter {
+        font-size: 14px;
+    }
+
+    #crypto-table th, #crypto-table td {
+        font-size: 10px;
+        padding: 2px;
+    }
+    .watchlist-btn {
+        padding: 4px 8px;
+        font-size: 12px;
+    }
+}

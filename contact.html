@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.5.0/remixicon.min.css">
+    <link rel="stylesheet" href="contact.css">
+    <title>Contact Us</title>
+</head>
+<body>
+    <!-- ========nav======================== -->
+    <nav>
+        <nav class="logo">crypto</nav>
+        <!-- <img src="asset/logo-3.jpg" alt="" class="logo"> -->
+        <div class="nav-menu" id="navMenu">
+            <ul>
+                <li><a href="home.html" class="link active">Home</a></li>
+                <li><a href="register.html" class="link">Register</a></li>
+                <li><a href="contact.html" class="link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- ==================Contact=============== -->
+     <section class="contact section" id="contact">
+        <h2 class="section__title">Contact us</h2>
+
+        <div class="contact__container container grid">
+            <form action="" class="contact__form grid" id="contact-form">
+                <div class="contact__group grid">
+                    <input type="text" name="user_name" placeholder="Names" required class="contact__input">
+                    <input type="email" name="user_email" placeholder="Email" required class="contact__input">
+                </div>
+
+                <textarea name="user_message" placeholder="Message" required class="contact__input contact__area"></textarea>
+
+                <button type="submit" class="button contact__button">Send Message</button>
+                <p class="contact__message" id="contact-message">Message</p>
+            </form>
+
+            <div class="contact__social grid">
+                <a href="https://www.facebook.com/" target="_blank" class="contact__social-link">
+                    <i class="ri-facebook-circle-line"></i>
+                    <span>Facebook</span>
+                </a>
+
+                <a href="https://www.instagram.com/" target="_blank" class="contact__social-link">
+                    <i class="ri-instagram-line"></i>
+                    <span>Instagram</span>
+                </a>
+            </div>
+        </div>
+     </section>
+     <!-- ==========email js============== -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <!-- ===========contact js============= -->
+    <script src="contact.js"></script>
+</body>
+</html>

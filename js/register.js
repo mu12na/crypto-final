@@ -1,5 +1,5 @@
 function myMenuFunction() {
-    var i = document.getElementById("navMenu");
+    let i = document.getElementById("navMenu"); 
 
     if(i.className === "nav-menu") {
         i.className += " responsive";
@@ -7,10 +7,10 @@ function myMenuFunction() {
         i.className = "nav-menu";
     }
    }
-   var a = document.getElementById("loginBtn");
-    var b = document.getElementById("registerBtn");
-    var x = document.getElementById("login");
-    var y = document.getElementById("register");
+   let a = document.getElementById("loginBtn");
+    let b = document.getElementById("registerBtn");
+    let x = document.getElementById("login");
+   let y = document.getElementById("register");
 
     function login() {
         x.style.left = "4px";
